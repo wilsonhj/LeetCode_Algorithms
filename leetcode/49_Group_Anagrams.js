@@ -35,14 +35,14 @@ function groupAnagrams1(strs) {
  * Approach 2: Using character count as key (More Efficient)
  * 
  * This approach is more efficient than sorting because:
- * 1. We avoid the expensive sorting operation (O(k log k))
- * 2. We just need to count characters (O(k))
+ * 1. avoid the expensive sorting operation (O(k log k))
+ * 2. just need to count characters (O(k))
  * 3. The key generation is more straightforward
  * 
  * How it works:
- * 1. For each string, we create an array of 26 zeros (one for each letter)
- * 2. We count the frequency of each character in the string
- * 3. We join these counts with a separator to create a unique key
+ * 1. For each string, create an array of 26 zeros (one for each letter)
+ * 2. count the frequency of each character in the string
+ * 3. join these counts with a separator to create a unique key
  * 4. Strings with the same character frequencies will have the same key
  * 
  * Example:
@@ -59,7 +59,7 @@ function groupAnagrams1(strs) {
  * - k is the maximum length of a string
  * 
  * Space Complexity: O(n * k) where:
- * - We need to store all strings in the hash map
+ * - need to store all strings in the hash map
  * - The key for each string is O(k) in length
  */
 function groupAnagrams2(strs) {

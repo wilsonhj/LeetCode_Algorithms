@@ -1,4 +1,4 @@
-from flip_equivalent_trees import Solution, TreeNode
+from 951_flip_equivalent_trees import Solution, TreeNode
 
 def build_tree(values):
     """Helper function to build a tree from a list representation."""

@@ -1,4 +1,4 @@
-// Given an array of integers temperatures represents the daily temperatures, return an array answer such that answer[i] is the number of days you have to wait after the ith day to get a warmer temperature. If there is no future day for which this is possible, keep answer[i] == 0 instead.
+// Problem:Given an array of integers temperatures represents the daily temperatures, return an array answer such that answer[i] is the number of days you have to wait after the ith day to get a warmer temperature. If there is no future day for which this is possible, keep answer[i] == 0 instead.
 
 // Example 1:
 
@@ -15,11 +15,11 @@
 
 /**
  * Algorithm Explanation:
- * We use a monotonic stack to solve this problem efficiently. The stack keeps track of indices
+ * Use a monotonic stack to solve this problem efficiently. The stack keeps track of indices
  * of temperatures in decreasing order. This means that for any index in the stack, the temperature
  * at that index is greater than all temperatures at indices below it in the stack.
  * 
- * For each temperature, we:
+ * For each temperature
  * 1. Check if it's greater than the temperature at the top of the stack
  * 2. If it is, we've found a warmer temperature for all temperatures in the stack
  * 3. Calculate the number of days to wait and store it in the result array
