@@ -1,6 +1,6 @@
 # LeetCode Preparation
 
-This repository contains solutions to LeetCode problems implemented in TypeScript, Python, and JavaScript. Each solution includes detailed explanations and comments to help understand the algorithms and their implementations.
+This repository contains solutions to LeetCode problems implemented in TypeScript, Python, JavaScript, and Julia. Each solution includes detailed explanations and comments to help understand the algorithms and their implementations.
 
 ## Structure
 
@@ -9,6 +9,7 @@ Each problem is stored in its own file named with the LeetCode problem number an
 - `200_Num_Of_Islands.ts`
 - `951_flip_equivalent_trees.py`
 - `951_flip_equivalent_trees.js`
+- `475_Heaters/heaters.jl`
 
 ## Solutions
 
@@ -27,11 +28,20 @@ Each problem is stored in its own file named with the LeetCode problem number an
 - Time Complexity: O(min(n1, n2)) where n1 and n2 are the number of nodes in each tree.
 - Space Complexity: O(min(h1, h2)) where h1 and h2 are the heights of the trees.
 
+### Heaters (475)
+- Problem: Given positions of houses and heaters on a line, find the minimum radius needed for all heaters so that every house is covered by at least one heater.
+- Solution: Uses binary search to find the closest heater for each house.
+- Implementations: Available in Julia with two different approaches:
+  - Using Julia's `searchsortedfirst` for efficient binary search
+  - Using a manual binary search implementation
+- Time Complexity: O(n log m) where n is the number of houses and m is the number of heaters.
+- Space Complexity: O(1) excluding the input arrays.
+
 ## Getting Started
 
 1. Clone the repository
 2. Install dependencies (if any)
-3. Run the solutions using TypeScript compiler, Python, or Node.js
+3. Run the solutions using TypeScript compiler, Python, Node.js, or Julia
 
 ## Contributing
 
